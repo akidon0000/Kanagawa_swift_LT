@@ -19,4 +19,13 @@ struct SlideConfiguration {
         IntroductionSlide()
         PhasedSlide()
     }
+
+    let theme = CustomTheme()
+}
+
+
+struct CustomTheme: SlideTheme {
+    let headerSlideStyle = CustomHeaderSlideStyle()
+    let itemStyle = CustomItemStyle()
+    let indexStyle = CustomIndexStyle()
 }
