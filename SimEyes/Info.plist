@@ -27,7 +27,7 @@
                 <string>Editor</string>
                 <key>CFBundleURLSchemes</key>
                 <array>
-                    <string>SlideKitPresentation</string>
+                    <string>SimEyes</string>
                 </array>
             </dict>
         </array>

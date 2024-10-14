@@ -3,106 +3,107 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3D10E3E44E47171F805723BE /* SlideKit in Frameworks */ = {isa = PBXBuildFile; productRef = 7BBD3F447A94756C938AE280 /* SlideKit */; };
-		546FA77C1749D747B12B8263 /* SlideKitPresentationApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 390C1B130AE523A060857B44 /* SlideKitPresentationApp.swift */; };
-		5E77BB578ECF1B42042D0047 /* SlideConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = D43BFD510AC691BFAB18FE35 /* SlideConfiguration.swift */; };
-		E61709DD154B2CB8836E7C98 /* SampleSlide.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50E04FE20B032EA6EC89A66C /* SampleSlide.swift */; };
+		15AB419E2CBCD0D900DC77F4 /* IntroductionSlide.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15AB419D2CBCD0D900DC77F4 /* IntroductionSlide.swift */; };
+		8C3F93843256F3BB2943A12E /* SampleSlide.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EF019860B34EE3F885FFC86 /* SampleSlide.swift */; };
+		E12B38C2C668A6EBC4AA7840 /* SlideConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2519F22AB00801004A02D732 /* SlideConfiguration.swift */; };
+		E72E8355844300F5A9BD6FF1 /* SlideKit in Frameworks */ = {isa = PBXBuildFile; productRef = AF9905DD1BC83BB7DC82D8E1 /* SlideKit */; };
+		F369026F62A3146ACCD73B28 /* SimEyesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36F81C588A8D80A6E6C65AF8 /* SimEyesApp.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		1E672EA3230D955E0C836D3A /* SlideKitPresentation.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SlideKitPresentation.entitlements; sourceTree = "<group>"; };
-		390C1B130AE523A060857B44 /* SlideKitPresentationApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlideKitPresentationApp.swift; sourceTree = "<group>"; };
-		50E04FE20B032EA6EC89A66C /* SampleSlide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleSlide.swift; sourceTree = "<group>"; };
-		821A485839443C9B29C6B1B6 /* SlideKitPresentation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SlideKitPresentation.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		A0510A87B05B5EC49E19A2C4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
-		D43BFD510AC691BFAB18FE35 /* SlideConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlideConfiguration.swift; sourceTree = "<group>"; };
+		0379A24BAF6762A255B62868 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		0EF019860B34EE3F885FFC86 /* SampleSlide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleSlide.swift; sourceTree = "<group>"; };
+		15AB419D2CBCD0D900DC77F4 /* IntroductionSlide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroductionSlide.swift; sourceTree = "<group>"; };
+		2519F22AB00801004A02D732 /* SlideConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlideConfiguration.swift; sourceTree = "<group>"; };
+		36F81C588A8D80A6E6C65AF8 /* SimEyesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimEyesApp.swift; sourceTree = "<group>"; };
+		8C57C2BF2BAA9A4FDC59F493 /* SimEyes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimEyes.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EE1CA8BEDD06C796B730E855 /* SimEyes.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SimEyes.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		DC62045FFF1DCE6CB8FD7978 /* Frameworks */ = {
+		31B259D8B6A28E3E176F1FDB /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3D10E3E44E47171F805723BE /* SlideKit in Frameworks */,
+				E72E8355844300F5A9BD6FF1 /* SlideKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		440F1570CB9FA2CDE470D330 /* Slides */ = {
+		1E57DB596D89A2372DE348F2 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				50E04FE20B032EA6EC89A66C /* SampleSlide.swift */,
-			);
-			path = Slides;
-			sourceTree = "<group>";
-		};
-		76114E660DCD9CB4D701FD0A /* SlideKitPresentation */ = {
-			isa = PBXGroup;
-			children = (
-				A0510A87B05B5EC49E19A2C4 /* Info.plist */,
-				D43BFD510AC691BFAB18FE35 /* SlideConfiguration.swift */,
-				1E672EA3230D955E0C836D3A /* SlideKitPresentation.entitlements */,
-				390C1B130AE523A060857B44 /* SlideKitPresentationApp.swift */,
-				440F1570CB9FA2CDE470D330 /* Slides */,
-			);
-			path = SlideKitPresentation;
-			sourceTree = "<group>";
-		};
-		96EE3FC2376E9E6DAE0588E5 = {
-			isa = PBXGroup;
-			children = (
-				76114E660DCD9CB4D701FD0A /* SlideKitPresentation */,
-				D942C3979C3C31A256C85442 /* Products */,
-			);
-			sourceTree = "<group>";
-		};
-		D942C3979C3C31A256C85442 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				821A485839443C9B29C6B1B6 /* SlideKitPresentation.app */,
+				8C57C2BF2BAA9A4FDC59F493 /* SimEyes.app */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		74D2EC170C7528872B8A870E = {
+			isa = PBXGroup;
+			children = (
+				D80A939884DD6624BC401660 /* SimEyes */,
+				1E57DB596D89A2372DE348F2 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D80A939884DD6624BC401660 /* SimEyes */ = {
+			isa = PBXGroup;
+			children = (
+				0379A24BAF6762A255B62868 /* Info.plist */,
+				EE1CA8BEDD06C796B730E855 /* SimEyes.entitlements */,
+				36F81C588A8D80A6E6C65AF8 /* SimEyesApp.swift */,
+				2519F22AB00801004A02D732 /* SlideConfiguration.swift */,
+				F6198E11A7A93E87B0E8CAEF /* Slides */,
+			);
+			path = SimEyes;
+			sourceTree = "<group>";
+		};
+		F6198E11A7A93E87B0E8CAEF /* Slides */ = {
+			isa = PBXGroup;
+			children = (
+				0EF019860B34EE3F885FFC86 /* SampleSlide.swift */,
+				15AB419D2CBCD0D900DC77F4 /* IntroductionSlide.swift */,
+			);
+			path = Slides;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		8C5774008E1B29FB7E7115DE /* SlideKitPresentation */ = {
+		A057934109BA2B11CE7D55BE /* SimEyes */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = DFEFE57D93D201805B66643C /* Build configuration list for PBXNativeTarget "SlideKitPresentation" */;
+			buildConfigurationList = C77A43F83B7D6782DF16A27B /* Build configuration list for PBXNativeTarget "SimEyes" */;
 			buildPhases = (
-				75F8F2F237BDD1D3A314AB4D /* Sources */,
-				DC62045FFF1DCE6CB8FD7978 /* Frameworks */,
+				529BDED22A186AD8F4763C8D /* Sources */,
+				31B259D8B6A28E3E176F1FDB /* Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = SlideKitPresentation;
+			name = SimEyes;
 			packageProductDependencies = (
-				7BBD3F447A94756C938AE280 /* SlideKit */,
+				AF9905DD1BC83BB7DC82D8E1 /* SlideKit */,
 			);
-			productName = SlideKitPresentation;
-			productReference = 821A485839443C9B29C6B1B6 /* SlideKitPresentation.app */;
+			productName = SimEyes;
+			productReference = 8C57C2BF2BAA9A4FDC59F493 /* SimEyes.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		B3223F0A1E07C5676CC35C48 /* Project object */ = {
+		B86837B4853A9646EB1B4C64 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 1200;
-				TargetAttributes = {
-				};
 			};
-			buildConfigurationList = 437415DAC4BA4A45D472181F /* Build configuration list for PBXProject "SlideKitPresentation" */;
+			buildConfigurationList = 137AB46DBACBDA66AEF4F6B4 /* Build configuration list for PBXProject "SimEyes" */;
 			compatibilityVersion = "Xcode 11.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -110,33 +111,52 @@
 				Base,
 				en,
 			);
-			mainGroup = 96EE3FC2376E9E6DAE0588E5;
+			mainGroup = 74D2EC170C7528872B8A870E;
 			packageReferences = (
-				5CDA526752E0A0E77CF54A73 /* XCRemoteSwiftPackageReference "SlideKit" */,
+				39197CFBE2B8F8FF040B1994 /* XCRemoteSwiftPackageReference "SlideKit" */,
 			);
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				8C5774008E1B29FB7E7115DE /* SlideKitPresentation */,
+				A057934109BA2B11CE7D55BE /* SimEyes */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		75F8F2F237BDD1D3A314AB4D /* Sources */ = {
+		529BDED22A186AD8F4763C8D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E61709DD154B2CB8836E7C98 /* SampleSlide.swift in Sources */,
-				5E77BB578ECF1B42042D0047 /* SlideConfiguration.swift in Sources */,
-				546FA77C1749D747B12B8263 /* SlideKitPresentationApp.swift in Sources */,
+				8C3F93843256F3BB2943A12E /* SampleSlide.swift in Sources */,
+				15AB419E2CBCD0D900DC77F4 /* IntroductionSlide.swift in Sources */,
+				F369026F62A3146ACCD73B28 /* SimEyesApp.swift in Sources */,
+				E12B38C2C668A6EBC4AA7840 /* SlideConfiguration.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		698AEAEB10BBA3C8B49E5FCA /* Debug */ = {
+		0C3643AC8E324866A2C0921D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				INFOPLIST_FILE = SimEyes/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.github.mtj0928.SlideGen.SimEyes;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		3FEFA3DD16D73952DFB15DB5 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -198,43 +218,25 @@
 			};
 			name = Debug;
 		};
-		85F3253C9312CC7DC30E0025 /* Release */ = {
+		601A0F77427175AC71B73E34 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
-				INFOPLIST_FILE = SlideKitPresentation/Info.plist;
+				INFOPLIST_FILE = SimEyes/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 12.0;
 				MARKETING_VERSION = 1.0.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.github.mtj0928.SlideGen.SlideKitPresentation;
+				PRODUCT_BUNDLE_IDENTIFIER = com.github.mtj0928.SlideGen.SimEyes;
 				SDKROOT = macosx;
 			};
 			name = Release;
 		};
-		BDA1F238CC499C24B367420A /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 1;
-				INFOPLIST_FILE = SlideKitPresentation/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/../Frameworks",
-				);
-				MACOSX_DEPLOYMENT_TARGET = 12.0;
-				MARKETING_VERSION = 1.0.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.github.mtj0928.SlideGen.SlideKitPresentation;
-				SDKROOT = macosx;
-			};
-			name = Debug;
-		};
-		D6DD5FE5E7D8F3E9DA1F8838 /* Release */ = {
+		CD2E52F2B15812D996B8D555 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -292,20 +294,20 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		437415DAC4BA4A45D472181F /* Build configuration list for PBXProject "SlideKitPresentation" */ = {
+		137AB46DBACBDA66AEF4F6B4 /* Build configuration list for PBXProject "SimEyes" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				698AEAEB10BBA3C8B49E5FCA /* Debug */,
-				D6DD5FE5E7D8F3E9DA1F8838 /* Release */,
+				3FEFA3DD16D73952DFB15DB5 /* Debug */,
+				CD2E52F2B15812D996B8D555 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
-		DFEFE57D93D201805B66643C /* Build configuration list for PBXNativeTarget "SlideKitPresentation" */ = {
+		C77A43F83B7D6782DF16A27B /* Build configuration list for PBXNativeTarget "SimEyes" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				BDA1F238CC499C24B367420A /* Debug */,
-				85F3253C9312CC7DC30E0025 /* Release */,
+				0C3643AC8E324866A2C0921D /* Debug */,
+				601A0F77427175AC71B73E34 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
@@ -313,7 +315,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		5CDA526752E0A0E77CF54A73 /* XCRemoteSwiftPackageReference "SlideKit" */ = {
+		39197CFBE2B8F8FF040B1994 /* XCRemoteSwiftPackageReference "SlideKit" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/mtj0928/SlideKit";
 			requirement = {
@@ -324,12 +326,12 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		7BBD3F447A94756C938AE280 /* SlideKit */ = {
+		AF9905DD1BC83BB7DC82D8E1 /* SlideKit */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 5CDA526752E0A0E77CF54A73 /* XCRemoteSwiftPackageReference "SlideKit" */;
+			package = 39197CFBE2B8F8FF040B1994 /* XCRemoteSwiftPackageReference "SlideKit" */;
 			productName = SlideKit;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
-	rootObject = B3223F0A1E07C5676CC35C48 /* Project object */;
+	rootObject = B86837B4853A9646EB1B4C64 /* Project object */;
 }
