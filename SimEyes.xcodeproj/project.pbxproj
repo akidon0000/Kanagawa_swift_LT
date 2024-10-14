@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		15AB419E2CBCD0D900DC77F4 /* IntroductionSlide.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15AB419D2CBCD0D900DC77F4 /* IntroductionSlide.swift */; };
 		15AB41A02CBCD49F00DC77F4 /* PhasedSlide.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15AB419F2CBCD49F00DC77F4 /* PhasedSlide.swift */; };
+		15AB41A22CBCD72700DC77F4 /* TitleSlide.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15AB41A12CBCD72700DC77F4 /* TitleSlide.swift */; };
 		8C3F93843256F3BB2943A12E /* SampleSlide.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EF019860B34EE3F885FFC86 /* SampleSlide.swift */; };
 		E12B38C2C668A6EBC4AA7840 /* SlideConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2519F22AB00801004A02D732 /* SlideConfiguration.swift */; };
 		E72E8355844300F5A9BD6FF1 /* SlideKit in Frameworks */ = {isa = PBXBuildFile; productRef = AF9905DD1BC83BB7DC82D8E1 /* SlideKit */; };
@@ -20,6 +21,7 @@
 		0EF019860B34EE3F885FFC86 /* SampleSlide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleSlide.swift; sourceTree = "<group>"; };
 		15AB419D2CBCD0D900DC77F4 /* IntroductionSlide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroductionSlide.swift; sourceTree = "<group>"; };
 		15AB419F2CBCD49F00DC77F4 /* PhasedSlide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhasedSlide.swift; sourceTree = "<group>"; };
+		15AB41A12CBCD72700DC77F4 /* TitleSlide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleSlide.swift; sourceTree = "<group>"; };
 		2519F22AB00801004A02D732 /* SlideConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlideConfiguration.swift; sourceTree = "<group>"; };
 		36F81C588A8D80A6E6C65AF8 /* SimEyesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimEyesApp.swift; sourceTree = "<group>"; };
 		8C57C2BF2BAA9A4FDC59F493 /* SimEyes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimEyes.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -69,6 +71,7 @@
 		F6198E11A7A93E87B0E8CAEF /* Slides */ = {
 			isa = PBXGroup;
 			children = (
+				15AB41A12CBCD72700DC77F4 /* TitleSlide.swift */,
 				0EF019860B34EE3F885FFC86 /* SampleSlide.swift */,
 				15AB419D2CBCD0D900DC77F4 /* IntroductionSlide.swift */,
 				15AB419F2CBCD49F00DC77F4 /* PhasedSlide.swift */,
@@ -131,6 +134,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				15AB41A22CBCD72700DC77F4 /* TitleSlide.swift in Sources */,
 				8C3F93843256F3BB2943A12E /* SampleSlide.swift in Sources */,
 				15AB419E2CBCD0D900DC77F4 /* IntroductionSlide.swift in Sources */,
 				15AB41A02CBCD49F00DC77F4 /* PhasedSlide.swift in Sources */,
