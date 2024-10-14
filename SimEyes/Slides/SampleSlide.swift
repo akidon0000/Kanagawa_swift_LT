@@ -51,6 +51,6 @@ struct SampleSlide_Previews: PreviewProvider {
         SlidePreview {
             SampleSlide()
         }
-        .preferredColorScheme(.light)
+//        .preferredColorScheme(.light)
     }
 }
