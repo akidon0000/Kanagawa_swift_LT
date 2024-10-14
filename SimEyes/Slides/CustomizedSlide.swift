@@ -67,10 +67,22 @@ struct CustomItemStyle: ItemStyle {
     }
 }
 
+struct CustomIndexStyle: IndexStyle {
+    func makeBody(configuration: Configuration) -> some View {
+        Text("\(configuration.slideIndexController.currentIndex)")
+            .font(.system(size: 420, weight: .heavy))
+            .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .bottomTrailing)
+            .foregroundColor(.gray.opacity(0.4))
+            .offset(y: 70)
+    }
+}
+
+
 struct CustomizedHeaderSlide_Previews: PreviewProvider {
     static var previews: some View {
         SlidePreview {
             CustomizedSlide()
         }
+        .indexStyle(CustomIndexStyle())
     }
 }
