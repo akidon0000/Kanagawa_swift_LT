@@ -17,6 +17,8 @@ struct SampleSlide: View {
     @Phase var phasedStateStore: SlidePhasedState
 
     var body: some View {
+        Image("akidon0000")
+        
         HeaderSlide("How to use the slide") {
             Item("Please tap the right half of this window") {
                 Item("You can go to the next state")
