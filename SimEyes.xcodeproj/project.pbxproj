@@ -7,13 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		153FB8C02CCCC43C00709EAC /* CenterSlide.swift in Sources */ = {isa = PBXBuildFile; fileRef = 153FB8BF2CCCC43C00709EAC /* CenterSlide.swift */; };
 		1594FF3B2CBD393400215B4A /* SelfIntroductionSlide.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1594FF3A2CBD393400215B4A /* SelfIntroductionSlide.swift */; };
 		1594FF3D2CBD3B1900215B4A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 15AB41A82CBD2A8500DC77F4 /* Assets.xcassets */; };
-		15AB419E2CBCD0D900DC77F4 /* IntroductionSlide.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15AB419D2CBCD0D900DC77F4 /* IntroductionSlide.swift */; };
+		15AB419E2CBCD0D900DC77F4 /* IntroductionSlide1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15AB419D2CBCD0D900DC77F4 /* IntroductionSlide1.swift */; };
 		15AB41A02CBCD49F00DC77F4 /* PhasedSlide.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15AB419F2CBCD49F00DC77F4 /* PhasedSlide.swift */; };
 		15AB41A22CBCD72700DC77F4 /* TitleSlide.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15AB41A12CBCD72700DC77F4 /* TitleSlide.swift */; };
 		15AB41A42CBCD90300DC77F4 /* CodeSlide.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15AB41A32CBCD90300DC77F4 /* CodeSlide.swift */; };
 		15AB41A62CBCDB8800DC77F4 /* CustomizedSlide.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15AB41A52CBCDB8800DC77F4 /* CustomizedSlide.swift */; };
+		15BDD9322CCCF8B40003D1DB /* IntroductionSlide2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15BDD9312CCCF8B40003D1DB /* IntroductionSlide2.swift */; };
+		15BDD9342CCD01780003D1DB /* IntroductionSlide3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15BDD9332CCD01780003D1DB /* IntroductionSlide3.swift */; };
+		15BDD9362CCD09170003D1DB /* IsolationSim.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15BDD9352CCD09170003D1DB /* IsolationSim.swift */; };
+		15BDD9382CCD19190003D1DB /* TrialAndErrorSlide.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15BDD9372CCD19190003D1DB /* TrialAndErrorSlide.swift */; };
+		15BDD93A2CCDCD520003D1DB /* OverviewSlide.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15BDD9392CCDCD520003D1DB /* OverviewSlide.swift */; };
+		15BDD93C2CCDD02E0003D1DB /* MacOSCameraToJPGSlide.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15BDD93B2CCDD02E0003D1DB /* MacOSCameraToJPGSlide.swift */; };
+		15BDD93E2CCE05C10003D1DB /* ThanksSlide.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15BDD93D2CCE05C10003D1DB /* ThanksSlide.swift */; };
+		15BDD9402CCE07B20003D1DB /* iOSSimCameraErrorSlide.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15BDD93F2CCE07B20003D1DB /* iOSSimCameraErrorSlide.swift */; };
+		15BDD9442CCF2D830003D1DB /* TwitterDanmakuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15BDD9432CCF2D830003D1DB /* TwitterDanmakuViewController.swift */; };
+		15BDD9472CCF883C0003D1DB /* SwiftSoup in Frameworks */ = {isa = PBXBuildFile; productRef = 15BDD9462CCF883C0003D1DB /* SwiftSoup */; };
+		15BDD94A2CCFA8430003D1DB /* TweetInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15BDD9492CCFA8430003D1DB /* TweetInfo.swift */; };
 		8C3F93843256F3BB2943A12E /* SampleSlide.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EF019860B34EE3F885FFC86 /* SampleSlide.swift */; };
 		E12B38C2C668A6EBC4AA7840 /* SlideConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2519F22AB00801004A02D732 /* SlideConfiguration.swift */; };
 		E72E8355844300F5A9BD6FF1 /* SlideKit in Frameworks */ = {isa = PBXBuildFile; productRef = AF9905DD1BC83BB7DC82D8E1 /* SlideKit */; };
@@ -23,13 +35,24 @@
 /* Begin PBXFileReference section */
 		0379A24BAF6762A255B62868 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		0EF019860B34EE3F885FFC86 /* SampleSlide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleSlide.swift; sourceTree = "<group>"; };
+		153FB8BF2CCCC43C00709EAC /* CenterSlide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CenterSlide.swift; sourceTree = "<group>"; };
 		1594FF3A2CBD393400215B4A /* SelfIntroductionSlide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelfIntroductionSlide.swift; sourceTree = "<group>"; };
-		15AB419D2CBCD0D900DC77F4 /* IntroductionSlide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroductionSlide.swift; sourceTree = "<group>"; };
+		15AB419D2CBCD0D900DC77F4 /* IntroductionSlide1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroductionSlide1.swift; sourceTree = "<group>"; };
 		15AB419F2CBCD49F00DC77F4 /* PhasedSlide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhasedSlide.swift; sourceTree = "<group>"; };
 		15AB41A12CBCD72700DC77F4 /* TitleSlide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleSlide.swift; sourceTree = "<group>"; };
 		15AB41A32CBCD90300DC77F4 /* CodeSlide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeSlide.swift; sourceTree = "<group>"; };
 		15AB41A52CBCDB8800DC77F4 /* CustomizedSlide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomizedSlide.swift; sourceTree = "<group>"; };
 		15AB41A82CBD2A8500DC77F4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		15BDD9312CCCF8B40003D1DB /* IntroductionSlide2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroductionSlide2.swift; sourceTree = "<group>"; };
+		15BDD9332CCD01780003D1DB /* IntroductionSlide3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroductionSlide3.swift; sourceTree = "<group>"; };
+		15BDD9352CCD09170003D1DB /* IsolationSim.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IsolationSim.swift; sourceTree = "<group>"; };
+		15BDD9372CCD19190003D1DB /* TrialAndErrorSlide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrialAndErrorSlide.swift; sourceTree = "<group>"; };
+		15BDD9392CCDCD520003D1DB /* OverviewSlide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverviewSlide.swift; sourceTree = "<group>"; };
+		15BDD93B2CCDD02E0003D1DB /* MacOSCameraToJPGSlide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MacOSCameraToJPGSlide.swift; sourceTree = "<group>"; };
+		15BDD93D2CCE05C10003D1DB /* ThanksSlide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThanksSlide.swift; sourceTree = "<group>"; };
+		15BDD93F2CCE07B20003D1DB /* iOSSimCameraErrorSlide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOSSimCameraErrorSlide.swift; sourceTree = "<group>"; };
+		15BDD9432CCF2D830003D1DB /* TwitterDanmakuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwitterDanmakuViewController.swift; sourceTree = "<group>"; };
+		15BDD9492CCFA8430003D1DB /* TweetInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TweetInfo.swift; sourceTree = "<group>"; };
 		2519F22AB00801004A02D732 /* SlideConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlideConfiguration.swift; sourceTree = "<group>"; };
 		36F81C588A8D80A6E6C65AF8 /* SimEyesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimEyesApp.swift; sourceTree = "<group>"; };
 		8C57C2BF2BAA9A4FDC59F493 /* SimEyes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimEyes.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -42,17 +65,36 @@
 			buildActionMask = 2147483647;
 			files = (
 				E72E8355844300F5A9BD6FF1 /* SlideKit in Frameworks */,
+				15BDD9472CCF883C0003D1DB /* SwiftSoup in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		153FB8C12CCCCD0300709EAC /* Custom */ = {
+			isa = PBXGroup;
+			children = (
+				15AB41A52CBCDB8800DC77F4 /* CustomizedSlide.swift */,
+			);
+			path = Custom;
+			sourceTree = "<group>";
+		};
 		1594FF3E2CBD409A00215B4A /* Templates */ = {
 			isa = PBXGroup;
 			children = (
+				153FB8BF2CCCC43C00709EAC /* CenterSlide.swift */,
 			);
 			path = Templates;
+			sourceTree = "<group>";
+		};
+		15BDD9482CCFA3910003D1DB /* Danmaku */ = {
+			isa = PBXGroup;
+			children = (
+				15BDD9492CCFA8430003D1DB /* TweetInfo.swift */,
+				15BDD9432CCF2D830003D1DB /* TwitterDanmakuViewController.swift */,
+			);
+			path = Danmaku;
 			sourceTree = "<group>";
 		};
 		1E57DB596D89A2372DE348F2 /* Products */ = {
@@ -74,13 +116,15 @@
 		D80A939884DD6624BC401660 /* SimEyes */ = {
 			isa = PBXGroup;
 			children = (
-				1594FF3E2CBD409A00215B4A /* Templates */,
 				0379A24BAF6762A255B62868 /* Info.plist */,
 				EE1CA8BEDD06C796B730E855 /* SimEyes.entitlements */,
 				36F81C588A8D80A6E6C65AF8 /* SimEyesApp.swift */,
 				2519F22AB00801004A02D732 /* SlideConfiguration.swift */,
 				15AB41A82CBD2A8500DC77F4 /* Assets.xcassets */,
 				F6198E11A7A93E87B0E8CAEF /* Slides */,
+				153FB8C12CCCCD0300709EAC /* Custom */,
+				1594FF3E2CBD409A00215B4A /* Templates */,
+				15BDD9482CCFA3910003D1DB /* Danmaku */,
 			);
 			path = SimEyes;
 			sourceTree = "<group>";
@@ -90,11 +134,18 @@
 			children = (
 				15AB41A12CBCD72700DC77F4 /* TitleSlide.swift */,
 				1594FF3A2CBD393400215B4A /* SelfIntroductionSlide.swift */,
+				15AB419D2CBCD0D900DC77F4 /* IntroductionSlide1.swift */,
+				15BDD9312CCCF8B40003D1DB /* IntroductionSlide2.swift */,
+				15BDD9392CCDCD520003D1DB /* OverviewSlide.swift */,
+				15BDD93B2CCDD02E0003D1DB /* MacOSCameraToJPGSlide.swift */,
+				15BDD9372CCD19190003D1DB /* TrialAndErrorSlide.swift */,
+				15BDD9352CCD09170003D1DB /* IsolationSim.swift */,
+				15BDD9332CCD01780003D1DB /* IntroductionSlide3.swift */,
 				0EF019860B34EE3F885FFC86 /* SampleSlide.swift */,
-				15AB419D2CBCD0D900DC77F4 /* IntroductionSlide.swift */,
 				15AB419F2CBCD49F00DC77F4 /* PhasedSlide.swift */,
 				15AB41A32CBCD90300DC77F4 /* CodeSlide.swift */,
-				15AB41A52CBCDB8800DC77F4 /* CustomizedSlide.swift */,
+				15BDD93D2CCE05C10003D1DB /* ThanksSlide.swift */,
+				15BDD93F2CCE07B20003D1DB /* iOSSimCameraErrorSlide.swift */,
 			);
 			path = Slides;
 			sourceTree = "<group>";
@@ -117,6 +168,7 @@
 			name = SimEyes;
 			packageProductDependencies = (
 				AF9905DD1BC83BB7DC82D8E1 /* SlideKit */,
+				15BDD9462CCF883C0003D1DB /* SwiftSoup */,
 			);
 			productName = SimEyes;
 			productReference = 8C57C2BF2BAA9A4FDC59F493 /* SimEyes.app */;
@@ -141,6 +193,7 @@
 			mainGroup = 74D2EC170C7528872B8A870E;
 			packageReferences = (
 				39197CFBE2B8F8FF040B1994 /* XCRemoteSwiftPackageReference "SlideKit" */,
+				15BDD9452CCF883C0003D1DB /* XCRemoteSwiftPackageReference "SwiftSoup" */,
 			);
 			projectDirPath = "";
 			projectRoot = "";
@@ -167,14 +220,25 @@
 			buildActionMask = 2147483647;
 			files = (
 				15AB41A62CBCDB8800DC77F4 /* CustomizedSlide.swift in Sources */,
+				15BDD9402CCE07B20003D1DB /* iOSSimCameraErrorSlide.swift in Sources */,
+				15BDD93C2CCDD02E0003D1DB /* MacOSCameraToJPGSlide.swift in Sources */,
+				15BDD93A2CCDCD520003D1DB /* OverviewSlide.swift in Sources */,
 				15AB41A42CBCD90300DC77F4 /* CodeSlide.swift in Sources */,
+				153FB8C02CCCC43C00709EAC /* CenterSlide.swift in Sources */,
 				1594FF3B2CBD393400215B4A /* SelfIntroductionSlide.swift in Sources */,
+				15BDD9322CCCF8B40003D1DB /* IntroductionSlide2.swift in Sources */,
 				15AB41A22CBCD72700DC77F4 /* TitleSlide.swift in Sources */,
+				15BDD93E2CCE05C10003D1DB /* ThanksSlide.swift in Sources */,
 				8C3F93843256F3BB2943A12E /* SampleSlide.swift in Sources */,
-				15AB419E2CBCD0D900DC77F4 /* IntroductionSlide.swift in Sources */,
+				15AB419E2CBCD0D900DC77F4 /* IntroductionSlide1.swift in Sources */,
 				15AB41A02CBCD49F00DC77F4 /* PhasedSlide.swift in Sources */,
+				15BDD9342CCD01780003D1DB /* IntroductionSlide3.swift in Sources */,
 				F369026F62A3146ACCD73B28 /* SimEyesApp.swift in Sources */,
+				15BDD9442CCF2D830003D1DB /* TwitterDanmakuViewController.swift in Sources */,
+				15BDD9382CCD19190003D1DB /* TrialAndErrorSlide.swift in Sources */,
+				15BDD9362CCD09170003D1DB /* IsolationSim.swift in Sources */,
 				E12B38C2C668A6EBC4AA7840 /* SlideConfiguration.swift in Sources */,
+				15BDD94A2CCFA8430003D1DB /* TweetInfo.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -196,6 +260,9 @@
 				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.github.mtj0928.SlideGen.SimEyes;
 				SDKROOT = macosx;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTS_MACCATALYST = NO;
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Debug;
 		};
@@ -276,6 +343,9 @@
 				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.github.mtj0928.SlideGen.SimEyes;
 				SDKROOT = macosx;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTS_MACCATALYST = NO;
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Release;
 		};
@@ -358,6 +428,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		15BDD9452CCF883C0003D1DB /* XCRemoteSwiftPackageReference "SwiftSoup" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/scinfu/SwiftSoup";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.7.5;
+			};
+		};
 		39197CFBE2B8F8FF040B1994 /* XCRemoteSwiftPackageReference "SlideKit" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/mtj0928/SlideKit";
@@ -369,6 +447,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		15BDD9462CCF883C0003D1DB /* SwiftSoup */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 15BDD9452CCF883C0003D1DB /* XCRemoteSwiftPackageReference "SwiftSoup" */;
+			productName = SwiftSoup;
+		};
 		AF9905DD1BC83BB7DC82D8E1 /* SlideKit */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 39197CFBE2B8F8FF040B1994 /* XCRemoteSwiftPackageReference "SlideKit" */;

@@ -18,46 +18,36 @@ struct SelfIntroductionSlide: View {
     @Phase var scale: SlidePhasedState
 
     var body: some View {
-        HeaderSlide("自己紹介") {
-            item(name: "名前", content: "akidon0000")
-        }
-        .overlay {
-            HStack(alignment: .bottom) {
-                Text("zzz")
-//                    .size(32)
-                    .multilineTextAlignment(.trailing)
-                Image("akidon0000")
-                    .resizable()
-                    .scaledToFit()
-                    .rotationEffect(.init(degrees: 20))
-                    .frame(width: 400)
-                    .clipShape(Circle())
-                    .overlay {
-                        Circle()
-                    }
+        VStack() {
+            HeaderSlide("自己紹介") {
+                Code(script, fontSize: 38)
             }
-            .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .bottomTrailing)
-            .padding(.trailing, 140)
-            .padding(.bottom, 40)
+            
+            Image("akidon0000")
+                .resizable()
+                .frame(width: 300, height: 300)
+                .clipShape(Circle())
+                .scaledToFit()
+                .overlay(
+                    Circle()
+                        .stroke(Color.blue, lineWidth: 5)
+                )
+                .padding(30)
         }
-    }
-
-    private func item(name: String, content: String) -> some View {
-        HStack(spacing: 32) {
-            Text(name)
-                .fontWeight(.semibold)
-            Capsule()
-                .foregroundColor(.accentColor)
-                .frame(width: 8)
-            Text(content)
-        }
-//        .slideFontSize(.body)
-        .fixedSize()
+        .frame(maxHeight: .infinity)
+        .padding(.leading)
     }
 
     var script: String {
         """
-        xxx
+        struct Profile {
+            let name = "akidon0000"
+            let x    = "@akidon0000"
+            var affiliation: String {
+                let currentYear = Calendar.current.component(.year, from: Date())
+                return 2025 <= currentYear ? "徳島大学院 修士2年" : "Sansan株式会社"
+            }
+        }
         """
     }
 }

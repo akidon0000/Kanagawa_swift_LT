@@ -15,9 +15,28 @@ struct SlideConfiguration {
     ///  Add your slides into the trailing closure.
     let slideIndexController = SlideIndexController {
         TitleSlide()
-        SampleSlide()
-        IntroductionSlide()
-        PhasedSlide()
+        SelfIntroductionSlide()
+        CenterSlide("完全体iPhoneに興味はないか？")
+        CenterSlide("時は 2024年7月10日...")
+        IntroductionSlide1()
+        IntroductionSlide2()
+        CenterSlide("茶番おしまい🍵")
+        CenterSlide("シミュレーターにも目を生み出してみよう")
+        CenterSlide("どうやって？🧐")
+        
+        CenterSlide("iPhoneシミュレーターのカメラ機能を \n Macのカメラで代用して擬似的に再現した \n お話をします")
+        
+        CenterSlide("実演")
+        
+        OverviewSlide()
+        
+        
+        CenterSlide("これであなたも完全体iPhoneに")
+        
+        CenterSlide("ありがとうございました")
+        
+        
+        
     }
 
     let theme = CustomTheme()

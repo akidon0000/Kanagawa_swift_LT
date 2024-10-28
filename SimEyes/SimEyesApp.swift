@@ -16,12 +16,17 @@ struct SimEyesApp: App {
     /// A presentation content view.
     /// Edit the view here if you'd like to set environments, overlay views or background views.
     var presentationContentView: some View {
-        SlideRouterView(slideIndexController: Self.configuration.slideIndexController)
-            .background(.white)
-            .slideTheme(Self.configuration.theme)
+        ZStack {
+            SlideRouterView(slideIndexController: Self.configuration.slideIndexController)
+                .slideTheme(Self.configuration.theme)
+                .foregroundStyle(.black)
+                .background(.white)
+//            TwitterDanmakuView()
+        }
     }
 
     var body: some Scene {
+#if os(macOS)
         WindowGroup {
             PresentationView(slideSize: Self.configuration.size) {
                 presentationContentView
@@ -39,5 +44,12 @@ struct SimEyesApp: App {
             }
         }
         .setupAsPresenterWindow()
+#elseif os(iOS)
+        WindowGroup {
+            PresentationView(slideSize: Self.configuration.size) {
+                presentationContentView
+            }
+        }
+#endif
     }
 }
