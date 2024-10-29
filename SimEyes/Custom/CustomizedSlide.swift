@@ -67,13 +67,10 @@ struct CustomItemStyle: ItemStyle {
     }
 }
 
+
 struct CustomIndexStyle: IndexStyle {
     func makeBody(configuration: Configuration) -> some View {
-        Text("\(configuration.slideIndexController.currentIndex)")
-            .font(.system(size: 420, weight: .heavy))
-            .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .bottomTrailing)
-            .foregroundColor(.gray.opacity(0.4))
-            .offset(y: 70)
+
     }
 }
 
@@ -84,21 +81,5 @@ struct CustomizedHeaderSlide_Previews: PreviewProvider {
             CustomizedSlide()
         }
         .indexStyle(CustomIndexStyle())
-    }
-}
-
-struct SlideText: View {
-    var text: String
-    var fontSize: CGFloat = 40
-    
-    // カスタムイニシャライザを追加
-    init(_ text: String, fontSize: CGFloat = 40) {
-        self.text = text
-        self.fontSize = fontSize
-    }
-    
-    var body: some View {
-        Text(text)
-            .font(.system(size: fontSize))
     }
 }

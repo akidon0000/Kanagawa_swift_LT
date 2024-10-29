@@ -11,22 +11,18 @@
 		1594FF3B2CBD393400215B4A /* SelfIntroductionSlide.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1594FF3A2CBD393400215B4A /* SelfIntroductionSlide.swift */; };
 		1594FF3D2CBD3B1900215B4A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 15AB41A82CBD2A8500DC77F4 /* Assets.xcassets */; };
 		15AB419E2CBCD0D900DC77F4 /* IntroductionSlide1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15AB419D2CBCD0D900DC77F4 /* IntroductionSlide1.swift */; };
-		15AB41A02CBCD49F00DC77F4 /* PhasedSlide.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15AB419F2CBCD49F00DC77F4 /* PhasedSlide.swift */; };
 		15AB41A22CBCD72700DC77F4 /* TitleSlide.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15AB41A12CBCD72700DC77F4 /* TitleSlide.swift */; };
-		15AB41A42CBCD90300DC77F4 /* CodeSlide.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15AB41A32CBCD90300DC77F4 /* CodeSlide.swift */; };
 		15AB41A62CBCDB8800DC77F4 /* CustomizedSlide.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15AB41A52CBCDB8800DC77F4 /* CustomizedSlide.swift */; };
 		15BDD9322CCCF8B40003D1DB /* IntroductionSlide2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15BDD9312CCCF8B40003D1DB /* IntroductionSlide2.swift */; };
-		15BDD9342CCD01780003D1DB /* IntroductionSlide3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15BDD9332CCD01780003D1DB /* IntroductionSlide3.swift */; };
-		15BDD9362CCD09170003D1DB /* IsolationSim.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15BDD9352CCD09170003D1DB /* IsolationSim.swift */; };
-		15BDD9382CCD19190003D1DB /* TrialAndErrorSlide.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15BDD9372CCD19190003D1DB /* TrialAndErrorSlide.swift */; };
 		15BDD93A2CCDCD520003D1DB /* OverviewSlide.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15BDD9392CCDCD520003D1DB /* OverviewSlide.swift */; };
-		15BDD93C2CCDD02E0003D1DB /* MacOSCameraToJPGSlide.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15BDD93B2CCDD02E0003D1DB /* MacOSCameraToJPGSlide.swift */; };
-		15BDD93E2CCE05C10003D1DB /* ThanksSlide.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15BDD93D2CCE05C10003D1DB /* ThanksSlide.swift */; };
-		15BDD9402CCE07B20003D1DB /* iOSSimCameraErrorSlide.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15BDD93F2CCE07B20003D1DB /* iOSSimCameraErrorSlide.swift */; };
+		15BDD93C2CCDD02E0003D1DB /* MacOSCameraToJPGSlide1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15BDD93B2CCDD02E0003D1DB /* MacOSCameraToJPGSlide1.swift */; };
 		15BDD9442CCF2D830003D1DB /* TwitterDanmakuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15BDD9432CCF2D830003D1DB /* TwitterDanmakuViewController.swift */; };
 		15BDD9472CCF883C0003D1DB /* SwiftSoup in Frameworks */ = {isa = PBXBuildFile; productRef = 15BDD9462CCF883C0003D1DB /* SwiftSoup */; };
 		15BDD94A2CCFA8430003D1DB /* TweetInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15BDD9492CCFA8430003D1DB /* TweetInfo.swift */; };
-		8C3F93843256F3BB2943A12E /* SampleSlide.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EF019860B34EE3F885FFC86 /* SampleSlide.swift */; };
+		15DE46242CD0DFCA008AA8EF /* MacOSCameraToJPGSlide2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15DE46232CD0DFCA008AA8EF /* MacOSCameraToJPGSlide2.swift */; };
+		15DE46262CD0EE64008AA8EF /* DisplayImageFromSimSlide.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15DE46252CD0EE64008AA8EF /* DisplayImageFromSimSlide.swift */; };
+		15DE46282CD1185A008AA8EF /* TaskSlide.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15DE46272CD1185A008AA8EF /* TaskSlide.swift */; };
+		15DE462A2CD125E4008AA8EF /* SlideText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15DE46292CD125E4008AA8EF /* SlideText.swift */; };
 		E12B38C2C668A6EBC4AA7840 /* SlideConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2519F22AB00801004A02D732 /* SlideConfiguration.swift */; };
 		E72E8355844300F5A9BD6FF1 /* SlideKit in Frameworks */ = {isa = PBXBuildFile; productRef = AF9905DD1BC83BB7DC82D8E1 /* SlideKit */; };
 		F369026F62A3146ACCD73B28 /* SimEyesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36F81C588A8D80A6E6C65AF8 /* SimEyesApp.swift */; };
@@ -34,25 +30,21 @@
 
 /* Begin PBXFileReference section */
 		0379A24BAF6762A255B62868 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
-		0EF019860B34EE3F885FFC86 /* SampleSlide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleSlide.swift; sourceTree = "<group>"; };
 		153FB8BF2CCCC43C00709EAC /* CenterSlide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CenterSlide.swift; sourceTree = "<group>"; };
 		1594FF3A2CBD393400215B4A /* SelfIntroductionSlide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelfIntroductionSlide.swift; sourceTree = "<group>"; };
 		15AB419D2CBCD0D900DC77F4 /* IntroductionSlide1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroductionSlide1.swift; sourceTree = "<group>"; };
-		15AB419F2CBCD49F00DC77F4 /* PhasedSlide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhasedSlide.swift; sourceTree = "<group>"; };
 		15AB41A12CBCD72700DC77F4 /* TitleSlide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleSlide.swift; sourceTree = "<group>"; };
-		15AB41A32CBCD90300DC77F4 /* CodeSlide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeSlide.swift; sourceTree = "<group>"; };
 		15AB41A52CBCDB8800DC77F4 /* CustomizedSlide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomizedSlide.swift; sourceTree = "<group>"; };
 		15AB41A82CBD2A8500DC77F4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		15BDD9312CCCF8B40003D1DB /* IntroductionSlide2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroductionSlide2.swift; sourceTree = "<group>"; };
-		15BDD9332CCD01780003D1DB /* IntroductionSlide3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroductionSlide3.swift; sourceTree = "<group>"; };
-		15BDD9352CCD09170003D1DB /* IsolationSim.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IsolationSim.swift; sourceTree = "<group>"; };
-		15BDD9372CCD19190003D1DB /* TrialAndErrorSlide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrialAndErrorSlide.swift; sourceTree = "<group>"; };
 		15BDD9392CCDCD520003D1DB /* OverviewSlide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverviewSlide.swift; sourceTree = "<group>"; };
-		15BDD93B2CCDD02E0003D1DB /* MacOSCameraToJPGSlide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MacOSCameraToJPGSlide.swift; sourceTree = "<group>"; };
-		15BDD93D2CCE05C10003D1DB /* ThanksSlide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThanksSlide.swift; sourceTree = "<group>"; };
-		15BDD93F2CCE07B20003D1DB /* iOSSimCameraErrorSlide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOSSimCameraErrorSlide.swift; sourceTree = "<group>"; };
+		15BDD93B2CCDD02E0003D1DB /* MacOSCameraToJPGSlide1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MacOSCameraToJPGSlide1.swift; sourceTree = "<group>"; };
 		15BDD9432CCF2D830003D1DB /* TwitterDanmakuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwitterDanmakuViewController.swift; sourceTree = "<group>"; };
 		15BDD9492CCFA8430003D1DB /* TweetInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TweetInfo.swift; sourceTree = "<group>"; };
+		15DE46232CD0DFCA008AA8EF /* MacOSCameraToJPGSlide2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MacOSCameraToJPGSlide2.swift; sourceTree = "<group>"; };
+		15DE46252CD0EE64008AA8EF /* DisplayImageFromSimSlide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayImageFromSimSlide.swift; sourceTree = "<group>"; };
+		15DE46272CD1185A008AA8EF /* TaskSlide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskSlide.swift; sourceTree = "<group>"; };
+		15DE46292CD125E4008AA8EF /* SlideText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlideText.swift; sourceTree = "<group>"; };
 		2519F22AB00801004A02D732 /* SlideConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlideConfiguration.swift; sourceTree = "<group>"; };
 		36F81C588A8D80A6E6C65AF8 /* SimEyesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimEyesApp.swift; sourceTree = "<group>"; };
 		8C57C2BF2BAA9A4FDC59F493 /* SimEyes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimEyes.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -76,6 +68,7 @@
 			isa = PBXGroup;
 			children = (
 				15AB41A52CBCDB8800DC77F4 /* CustomizedSlide.swift */,
+				15DE46292CD125E4008AA8EF /* SlideText.swift */,
 			);
 			path = Custom;
 			sourceTree = "<group>";
@@ -137,15 +130,10 @@
 				15AB419D2CBCD0D900DC77F4 /* IntroductionSlide1.swift */,
 				15BDD9312CCCF8B40003D1DB /* IntroductionSlide2.swift */,
 				15BDD9392CCDCD520003D1DB /* OverviewSlide.swift */,
-				15BDD93B2CCDD02E0003D1DB /* MacOSCameraToJPGSlide.swift */,
-				15BDD9372CCD19190003D1DB /* TrialAndErrorSlide.swift */,
-				15BDD9352CCD09170003D1DB /* IsolationSim.swift */,
-				15BDD9332CCD01780003D1DB /* IntroductionSlide3.swift */,
-				0EF019860B34EE3F885FFC86 /* SampleSlide.swift */,
-				15AB419F2CBCD49F00DC77F4 /* PhasedSlide.swift */,
-				15AB41A32CBCD90300DC77F4 /* CodeSlide.swift */,
-				15BDD93D2CCE05C10003D1DB /* ThanksSlide.swift */,
-				15BDD93F2CCE07B20003D1DB /* iOSSimCameraErrorSlide.swift */,
+				15BDD93B2CCDD02E0003D1DB /* MacOSCameraToJPGSlide1.swift */,
+				15DE46232CD0DFCA008AA8EF /* MacOSCameraToJPGSlide2.swift */,
+				15DE46252CD0EE64008AA8EF /* DisplayImageFromSimSlide.swift */,
+				15DE46272CD1185A008AA8EF /* TaskSlide.swift */,
 			);
 			path = Slides;
 			sourceTree = "<group>";
@@ -219,24 +207,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				15DE462A2CD125E4008AA8EF /* SlideText.swift in Sources */,
 				15AB41A62CBCDB8800DC77F4 /* CustomizedSlide.swift in Sources */,
-				15BDD9402CCE07B20003D1DB /* iOSSimCameraErrorSlide.swift in Sources */,
-				15BDD93C2CCDD02E0003D1DB /* MacOSCameraToJPGSlide.swift in Sources */,
+				15BDD93C2CCDD02E0003D1DB /* MacOSCameraToJPGSlide1.swift in Sources */,
 				15BDD93A2CCDCD520003D1DB /* OverviewSlide.swift in Sources */,
-				15AB41A42CBCD90300DC77F4 /* CodeSlide.swift in Sources */,
 				153FB8C02CCCC43C00709EAC /* CenterSlide.swift in Sources */,
 				1594FF3B2CBD393400215B4A /* SelfIntroductionSlide.swift in Sources */,
 				15BDD9322CCCF8B40003D1DB /* IntroductionSlide2.swift in Sources */,
+				15DE46262CD0EE64008AA8EF /* DisplayImageFromSimSlide.swift in Sources */,
 				15AB41A22CBCD72700DC77F4 /* TitleSlide.swift in Sources */,
-				15BDD93E2CCE05C10003D1DB /* ThanksSlide.swift in Sources */,
-				8C3F93843256F3BB2943A12E /* SampleSlide.swift in Sources */,
 				15AB419E2CBCD0D900DC77F4 /* IntroductionSlide1.swift in Sources */,
-				15AB41A02CBCD49F00DC77F4 /* PhasedSlide.swift in Sources */,
-				15BDD9342CCD01780003D1DB /* IntroductionSlide3.swift in Sources */,
+				15DE46282CD1185A008AA8EF /* TaskSlide.swift in Sources */,
 				F369026F62A3146ACCD73B28 /* SimEyesApp.swift in Sources */,
 				15BDD9442CCF2D830003D1DB /* TwitterDanmakuViewController.swift in Sources */,
-				15BDD9382CCD19190003D1DB /* TrialAndErrorSlide.swift in Sources */,
-				15BDD9362CCD09170003D1DB /* IsolationSim.swift in Sources */,
+				15DE46242CD0DFCA008AA8EF /* MacOSCameraToJPGSlide2.swift in Sources */,
 				E12B38C2C668A6EBC4AA7840 /* SlideConfiguration.swift in Sources */,
 				15BDD94A2CCFA8430003D1DB /* TweetInfo.swift in Sources */,
 			);
@@ -256,7 +240,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 12.0;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
 				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.github.mtj0928.SlideGen.SimEyes;
 				SDKROOT = macosx;
@@ -339,7 +323,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 12.0;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
 				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.github.mtj0928.SlideGen.SimEyes;
 				SDKROOT = macosx;

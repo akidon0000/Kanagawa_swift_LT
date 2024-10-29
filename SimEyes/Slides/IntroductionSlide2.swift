@@ -35,9 +35,12 @@ struct IntroductionSlide2: View {
                 .rotationEffect(.degrees(-34))
                 .frame(height: 600)
                 .offset(y: -150)
-            
-            Image("brain")
-                .offset(y: brainOffset)
+            ZStack {
+                Image("brain")
+                SlideText("Apple Intelligence")
+                    .fontWeight(.bold)
+            }
+            .offset(y: brainOffset)
             
         }
         .onAppear {
@@ -50,6 +53,13 @@ struct IntroductionSlide2: View {
                 brainOffset = -400
             }
         }
+    }
+    
+    var script: String {
+        """
+        これによって、iPhoneに手足が装着され、
+        さらにiOS18からApple Intelligenceが
+        """
     }
 }
 

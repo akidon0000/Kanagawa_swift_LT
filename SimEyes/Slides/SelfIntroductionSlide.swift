@@ -11,16 +11,10 @@ import SlideKit
 @Slide
 struct SelfIntroductionSlide: View {
 
-    enum SlidePhasedState: Int, PhasedState {
-        case initial, next
-    }
-
-    @Phase var scale: SlidePhasedState
-
     var body: some View {
         VStack() {
             HeaderSlide("自己紹介") {
-                Code(script, fontSize: 38)
+                Code(code, fontSize: 38)
             }
             
             Image("akidon0000")
@@ -38,7 +32,7 @@ struct SelfIntroductionSlide: View {
         .padding(.leading)
     }
 
-    var script: String {
+    var code: String {
         """
         struct Profile {
             let name = "akidon0000"
@@ -48,6 +42,13 @@ struct SelfIntroductionSlide: View {
                 return 2025 <= currentYear ? "徳島大学院 修士2年" : "Sansan株式会社"
             }
         }
+        """
+    }
+    
+    var script: String {
+        """
+        「あきどん」と言います。徳島で学生をやってます。来年からはSansanでiOSのエンジニアになります。
+        趣味は半年前に始めたポケカです〜
         """
     }
 }

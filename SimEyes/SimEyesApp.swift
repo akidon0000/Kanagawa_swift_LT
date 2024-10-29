@@ -16,13 +16,10 @@ struct SimEyesApp: App {
     /// A presentation content view.
     /// Edit the view here if you'd like to set environments, overlay views or background views.
     var presentationContentView: some View {
-        ZStack {
-            SlideRouterView(slideIndexController: Self.configuration.slideIndexController)
-                .slideTheme(Self.configuration.theme)
-                .foregroundStyle(.black)
-                .background(.white)
-//            TwitterDanmakuView()
-        }
+        SlideRouterView(slideIndexController: Self.configuration.slideIndexController)
+            .slideTheme(Self.configuration.theme)
+            .foregroundStyle(.black)
+            .background(.white)
     }
 
     var body: some Scene {
@@ -35,15 +32,15 @@ struct SimEyesApp: App {
         .setupAsPresentationWindow(Self.configuration.slideIndexController, appName: "SimEyes")
         .addPDFExportCommands(for: presentationContentView, with: Self.configuration.slideIndexController, size: Self.configuration.size)
 
-        WindowGroup {
-            macOSPresenterView(
-                slideSize: Self.configuration.size,
-                slideIndexController: Self.configuration.slideIndexController
-            ) {
-                presentationContentView
-            }
-        }
-        .setupAsPresenterWindow()
+//        WindowGroup {
+//            macOSPresenterView(
+//                slideSize: Self.configuration.size,
+//                slideIndexController: Self.configuration.slideIndexController
+//            ) {
+//                presentationContentView
+//            }
+//        }
+//        .setupAsPresenterWindow()
 #elseif os(iOS)
         WindowGroup {
             PresentationView(slideSize: Self.configuration.size) {

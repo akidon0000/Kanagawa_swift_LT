@@ -16,29 +16,24 @@ struct SlideConfiguration {
     let slideIndexController = SlideIndexController {
         TitleSlide()
         SelfIntroductionSlide()
-        CenterSlide("完全体iPhoneに興味はないか？")
+        CenterSlide("完全体iPhoneに興味はないか？📱")
         CenterSlide("時は 2024年7月10日...")
         IntroductionSlide1()
         IntroductionSlide2()
         CenterSlide("茶番おしまい🍵")
-        CenterSlide("シミュレーターにも目を生み出してみよう")
+        CenterSlide("シミュレーターにも目を生み出してみたい")
         CenterSlide("どうやって？🧐")
-        
-        CenterSlide("iPhoneシミュレーターのカメラ機能を \n Macのカメラで代用して擬似的に再現した \n お話をします")
-        
-        CenterSlide("実演")
-        
+        CenterSlide("PCのカメラがあるじゃない💻")
+        CenterSlide("実演📱")
         OverviewSlide()
-        
-        
+        MacOSCameraToJPGSlide1()
+        MacOSCameraToJPGSlide2()
+        DisplayImageFromSimSlide()
+        CenterSlide("完成")
+        TaskSlide()
         CenterSlide("これであなたも完全体iPhoneに")
-        
         CenterSlide("ありがとうございました")
-        
-        
-        
     }
-
     let theme = CustomTheme()
 }
 

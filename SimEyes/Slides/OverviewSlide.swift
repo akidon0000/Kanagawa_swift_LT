@@ -10,103 +10,131 @@ import SlideKit
 
 @Slide
 struct OverviewSlide: View {
-    @State private var showImageConversion = false
-    @State private var showTransferArrow = false
-    @State private var showFileAccess = false
-    @State private var showDisplayOnSimulator = false
+    @State private var showAnimationList = [false, false, false, false, false, false, false]
     
     var body: some View {
         HeaderSlide("全体像") {
             VStack {
-                Spacer() // 画面の中央に配置するためのスペーサー
-
-                HStack(spacing: 80) { // 横の間隔も2倍に
-                    // macOSのセクション
-                    VStack {
-                        SlideText("macOS")
-                            .font(.largeTitle) // フォントサイズを大きく
-
-                        VStack(spacing: 40) { // 内部のスペースも2倍
-                            Rectangle()
-                                .fill(Color.blue)
-                                .frame(width: 500, height: 240) // 幅と高さを2倍に
-                                .overlay(SlideText("カメラ映像取得")
-                                    .foregroundColor(.white))
-                            
-                            if showImageConversion {
-                                Rectangle()
-                                    .fill(Color.orange)
-                                    .frame(width: 500, height: 240) // 幅と高さを2倍に
-                                    .overlay(SlideText("JPEGに変換")
-                                        .foregroundColor(.white))
-                                    .transition(.scale) // アニメーション
-                            }
-                        }
-                        .padding(20) // パディングも2倍に
-                        .overlay(
-                            RoundedRectangle(cornerRadius: 20) // 枠線の角の半径も調整
-                                .stroke(Color.gray, lineWidth: 4) // 枠線も2倍に
-                        )
-                    }
+                Spacer()
+                HStack(spacing: 30) {
+                    OverViewSection(title: "macOS", firstConversion: $showAnimationList[0],
+                                    firstText: "カメラ起動\n映像取得",
+                                    firstColor: Color.blue,
+                                    arrowConversion: $showAnimationList[1],
+                                    secondConversion: $showAnimationList[2],
+                                    secondText: "JPEGに変換\n保存",
+                                    secondColor: Color.orange)
                     
-                    // 矢印
-                    if showTransferArrow {
+                    if showAnimationList[3] {
                         Image(systemName: "arrow.right")
-                            .font(.system(size: 200)) // 矢印のサイズも2倍に
+                            .font(.system(size: 200))
                             .foregroundColor(.gray)
-                            .transition(.scale) // アニメーション
+                            .transition(.scale)
                     }
                     
-                    // iPhoneシミュレーターのセクション
-                    VStack {
-                        SlideText("iPhone シミュレーター")
-                            .font(.largeTitle) // フォントサイズを大きく
-                        
-                        VStack(spacing: 40) {
-                            if showFileAccess {
-                                Rectangle()
-                                    .fill(Color.green)
-                                    .frame(width: 500, height: 240) // 幅と高さを2倍に
-                                    .overlay(SlideText("JPEG取得")
-                                        .foregroundColor(.white))
-                                    .transition(.scale) // アニメーション
-                            }
-                            
-                            if showDisplayOnSimulator {
-                                Rectangle()
-                                    .fill(Color.purple)
-                                    .frame(width: 500, height: 240) // 幅と高さを2倍に
-                                    .overlay(SlideText("表示")
-                                        .foregroundColor(.white))
-                                    .transition(.scale) // アニメーション
-                            }
-                        }
-                        .padding(20)
-                        .overlay(
-                            RoundedRectangle(cornerRadius: 20)
-                                .stroke(Color.gray, lineWidth: 4)
-                        )
-                    }
+                    OverViewSection(title: "iPhoneシミュレーター",
+                                    firstConversion: $showAnimationList[4],
+                                    firstText: "JPEG取得",
+                                    firstColor: Color.green,
+                                    arrowConversion: $showAnimationList[5],
+                                    secondConversion: $showAnimationList[6],
+                                    secondText: "表示",
+                                    secondColor: Color.purple)
+                    
                 }
-                .frame(maxWidth: .infinity) // HStackの幅を親ビューに合わせる
+                .frame(maxWidth: .infinity)
                 
-                Spacer() // 画面の中央に配置するためのスペーサー
+                Spacer()
             }
             .onAppear {
                 // アニメーションの順序を設定
                 withAnimation(.easeInOut(duration: 1).delay(1)) {
-                    showImageConversion = true
+                    showAnimationList[0] = true
                 }
                 withAnimation(.easeInOut(duration: 1).delay(2.5)) {
-                    showTransferArrow = true
+                    showAnimationList[1] = true
                 }
                 withAnimation(.easeInOut(duration: 1).delay(4)) {
-                    showFileAccess = true
+                    showAnimationList[2] = true
                 }
-                withAnimation(.easeInOut(duration: 1).delay(5.5)) {
-                    showDisplayOnSimulator = true
+                withAnimation(.easeInOut(duration: 1).delay(6.5)) {
+                    showAnimationList[3] = true
+                }
+                withAnimation(.easeInOut(duration: 1).delay(8)) {
+                    showAnimationList[4] = true
+                }
+                withAnimation(.easeInOut(duration: 1).delay(9.5)) {
+                    showAnimationList[5] = true
+                }
+                withAnimation(.easeInOut(duration: 1).delay(11)) {
+                    showAnimationList[6] = true
                 }
             }
+        }
+    }
+    
+    var script: String {
+        """
+        
+        """
+    }
+}
+
+struct OverViewSection: View {
+    let title: String
+    
+    @Binding var firstConversion: Bool
+    let firstText: String
+    let firstColor: Color
+    
+    @Binding var arrowConversion: Bool
+    
+    @Binding var secondConversion: Bool
+    let secondText: String
+    let secondColor: Color
+    
+    var body: some View {
+        VStack {
+            SlideText(title)
+                .font(.largeTitle)
+
+            HStack(spacing: 10) {
+                
+                if firstConversion {
+                    Rectangle()
+                        .fill(firstColor)
+                        .frame(width: 300, height: 240)
+                        .overlay(SlideText(firstText)
+                            .foregroundColor(.white))
+                        .multilineTextAlignment(.center)
+                        .transition(.scale)
+                        .animation(.easeInOut, value: firstConversion)
+                }
+                
+                if arrowConversion {
+                    Image(systemName: "arrow.right")
+                        .font(.system(size: 80))
+                        .foregroundColor(.gray)
+                        .transition(.scale)
+                        .animation(.easeInOut, value: firstConversion || secondConversion)
+                }
+                
+                if secondConversion {
+                    Rectangle()
+                        .fill(secondColor)
+                        .frame(width: 300, height: 240)
+                        .overlay(SlideText(secondText)
+                            .foregroundColor(.white))
+                        .multilineTextAlignment(.center)
+                        .transition(.scale)
+                        .animation(.easeInOut, value: secondConversion)
+                }
+            }
+            .padding(20)
+            .overlay(
+                RoundedRectangle(cornerRadius: 20)
+                    .stroke(Color.gray, lineWidth: 4)
+            )
         }
     }
 }

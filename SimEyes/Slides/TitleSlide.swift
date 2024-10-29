@@ -40,6 +40,13 @@ struct TitleSlide: View {
             .padding(.bottom, 40)
         }
     }
+    
+    var script: String {
+        """
+        「iPhoneシミュレーターに目を生やす」というタイトルで発表します。
+        ちなみにこのスライドは「まつじ」さんのSlideKitを使ってSwiftUIで作ってます。
+        """
+    }
 }
 
 

@@ -23,6 +23,13 @@ struct IntroductionSlide1: View {
                 }
             )
     }
+    
+    
+    var script: String {
+        """
+        iPhoneに手足が生えました
+        """
+    }
 }
 
 
