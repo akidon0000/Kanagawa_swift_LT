@@ -10,132 +10,143 @@ import SlideKit
 
 @Slide
 struct OverviewSlide: View {
-    @State private var showAnimationList = [false, false, false, false, false, false, false]
+    
+    enum SlidePhase: Int, PhasedState {
+        case initial, second, third
+    }
+    
+    @Phase var slidePhase: SlidePhase
+    
+    @State private var macOSAnimation = false
+    @State private var isCenterArrowAnimated = false
+    @State private var iPhoneAnimation = false
     
     var body: some View {
         HeaderSlide("全体像") {
-            VStack {
-                Spacer()
-                HStack(spacing: 30) {
-                    OverViewSection(title: "macOS", firstConversion: $showAnimationList[0],
-                                    firstText: "カメラ起動\n映像取得",
-                                    firstColor: Color.blue,
-                                    arrowConversion: $showAnimationList[1],
-                                    secondConversion: $showAnimationList[2],
-                                    secondText: "JPEGに変換\n保存",
-                                    secondColor: Color.orange)
-                    
-                    if showAnimationList[3] {
-                        Image(systemName: "arrow.right")
-                            .font(.system(size: 200))
-                            .foregroundColor(.gray)
-                            .transition(.scale)
-                    }
-                    
-                    OverViewSection(title: "iPhoneシミュレーター",
-                                    firstConversion: $showAnimationList[4],
-                                    firstText: "JPEG取得",
-                                    firstColor: Color.green,
-                                    arrowConversion: $showAnimationList[5],
-                                    secondConversion: $showAnimationList[6],
-                                    secondText: "表示",
-                                    secondColor: Color.purple)
-                    
-                }
-                .frame(maxWidth: .infinity)
+            HStack(spacing: 30) {
+                macOSSection
+                    .opacity(macOSAnimation ? 1 : 0)
                 
-                Spacer()
+                Image(systemName: "arrow.right")
+                    .font(.system(size: 200))
+                    .foregroundColor(.gray)
+                    .transition(.scale)
+                    .opacity(isCenterArrowAnimated ? 1 : 0)
+                
+                iPhoneSimulatorSection
+                    .opacity(iPhoneAnimation ? 1 : 0)
             }
-            .onAppear {
-                // アニメーションの順序を設定
-                withAnimation(.easeInOut(duration: 1).delay(1)) {
-                    showAnimationList[0] = true
+            .frame(maxWidth: .infinity, maxHeight: .infinity)
+            .onChange(of: slidePhase) { newPhase in
+                if newPhase == .second {
+                    macOSAnimation = true
                 }
-                withAnimation(.easeInOut(duration: 1).delay(2.5)) {
-                    showAnimationList[1] = true
-                }
-                withAnimation(.easeInOut(duration: 1).delay(4)) {
-                    showAnimationList[2] = true
-                }
-                withAnimation(.easeInOut(duration: 1).delay(6.5)) {
-                    showAnimationList[3] = true
-                }
-                withAnimation(.easeInOut(duration: 1).delay(8)) {
-                    showAnimationList[4] = true
-                }
-                withAnimation(.easeInOut(duration: 1).delay(9.5)) {
-                    showAnimationList[5] = true
-                }
-                withAnimation(.easeInOut(duration: 1).delay(11)) {
-                    showAnimationList[6] = true
+                if newPhase == .third {
+                    isCenterArrowAnimated = true
+                    iPhoneAnimation = true
                 }
             }
         }
     }
     
-    var script: String {
-        """
-        
-        """
+    private var macOSSection: some View {
+        OverviewSection(
+            title: "Command Line Tool",
+            subTitle: "(SPMで作成しHomebrewで配布)",
+            firstCircleText: "カメラ起動\n映像取得",
+            firstCircleColor: Color.blue,
+            secondCircleText: "JPEGに\n変換・保存",
+            secondCircleColor: Color.orange,
+            isAnimation: $macOSAnimation
+        )
+    }
+    
+    private var iPhoneSimulatorSection: some View {
+        OverviewSection(
+            title: "iPhoneシミュレーター",
+            subTitle: nil,
+            firstCircleText: "JPEG取得",
+            firstCircleColor: Color.green,
+            secondCircleText: "表示",
+            secondCircleColor: Color.purple,
+            isAnimation: $iPhoneAnimation
+        )
     }
 }
 
-struct OverViewSection: View {
+struct OverviewSection: View {
+    
     let title: String
+    let subTitle: String?
     
-    @Binding var firstConversion: Bool
-    let firstText: String
-    let firstColor: Color
+    let firstCircleText: String
+    let firstCircleColor: Color
     
-    @Binding var arrowConversion: Bool
+    let secondCircleText: String
+    let secondCircleColor: Color
     
-    @Binding var secondConversion: Bool
-    let secondText: String
-    let secondColor: Color
+    @Binding var isAnimation: Bool
     
     var body: some View {
         VStack {
-            SlideText(title)
-                .font(.largeTitle)
-
             HStack(spacing: 10) {
+                animatedCircle(text: firstCircleText,
+                               color: firstCircleColor,
+                               isAnimated: isAnimation)
                 
-                if firstConversion {
-                    Rectangle()
-                        .fill(firstColor)
-                        .frame(width: 300, height: 240)
-                        .overlay(SlideText(firstText)
-                            .foregroundColor(.white))
-                        .multilineTextAlignment(.center)
-                        .transition(.scale)
-                        .animation(.easeInOut, value: firstConversion)
-                }
+                Image(systemName: "arrow.right")
+                    .font(.system(size: 80))
+                    .foregroundColor(.gray)
+                    .transition(.scale)
+                    .opacity(isAnimation ? 1 : 0)
+                    .animation(.easeInOut, value: isAnimation)
                 
-                if arrowConversion {
-                    Image(systemName: "arrow.right")
-                        .font(.system(size: 80))
-                        .foregroundColor(.gray)
-                        .transition(.scale)
-                        .animation(.easeInOut, value: firstConversion || secondConversion)
-                }
-                
-                if secondConversion {
-                    Rectangle()
-                        .fill(secondColor)
-                        .frame(width: 300, height: 240)
-                        .overlay(SlideText(secondText)
-                            .foregroundColor(.white))
-                        .multilineTextAlignment(.center)
-                        .transition(.scale)
-                        .animation(.easeInOut, value: secondConversion)
-                }
+                animatedCircle(text: secondCircleText,
+                               color: secondCircleColor,
+                               isAnimated: isAnimation)
             }
             .padding(20)
             .overlay(
                 RoundedRectangle(cornerRadius: 20)
                     .stroke(Color.gray, lineWidth: 4)
             )
+            
+            Text(title)
+                .font(.system(size: 60))
+                .fontWeight(.bold)
+                .multilineTextAlignment(.center)
         }
+        .overlay {
+            Text(subTitle ?? "")
+                .font(.system(size: 40))
+                .multilineTextAlignment(.center)
+                .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .bottom)
+                .padding(.top, 550)
+
+        }
+    }
+    
+    @ViewBuilder
+    private func animatedCircle(text: String, color: Color, isAnimated: Bool) -> some View {
+        ZStack {
+            Circle()
+                .fill(color)
+                .frame(width: 400, height: 400)
+                .scaleEffect(isAnimated ? 1.0 : 0.0)
+                .mask(
+                    Rectangle()
+                        .frame(width: 300, height: 240)
+                )
+                .overlay(
+                    SlideText(text)
+                        .font(.system(size: 80))
+                        .foregroundColor(.white)
+                        .fontWeight(.bold)
+                        .multilineTextAlignment(.center)
+                )
+                .animation(.easeInOut(duration: 2), value: isAnimated)
+        }
+        .frame(width: 300, height: 300)
     }
 }
 

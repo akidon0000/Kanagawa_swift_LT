@@ -26,19 +26,23 @@ struct CustomizedSlide: View {
 
 struct CustomHeaderSlideStyle: HeaderSlideStyle {
     func makeBody(configuration: Configuration) -> some View {
-        VStack(alignment: .leading, spacing: 0) {
-            configuration.header
-                .font(.system(size: 90))
-                .padding(.vertical, 80)
-                .frame(maxWidth: .infinity, alignment: .center)
-                .foregroundColor(.accentColor)
-            VStack(alignment: .leading, spacing: 90) {
-                configuration.content
-                    .font(.system(size: 48))
+        VStack(alignment: .leading, spacing: .zero) {
+            VStack(alignment: .leading, spacing: 80) {
+                HStack(spacing: 32) {
+                    configuration.header
+                        .font(.system(size: 90))
+                        .fontWeight(.bold)
+                        .foregroundColor(.accentColor)
+                        .frame(maxWidth: .infinity, alignment: .leading)
+                }
+                VStack(alignment: .leading, spacing: 48) {
+                    configuration.content
+                        .font(.system(size: 48))
+                }
             }
+            Spacer(minLength: 0)
         }
-        .padding(.horizontal, 48)
-        .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .topLeading)
+        .padding(60)
     }
 }
 

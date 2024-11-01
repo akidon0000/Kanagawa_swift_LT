@@ -12,44 +12,66 @@ import SlideKit
 struct SelfIntroductionSlide: View {
 
     var body: some View {
-        VStack() {
-            HeaderSlide("自己紹介") {
-                Code(code, fontSize: 38)
-            }
-            
-            Image("akidon0000")
-                .resizable()
-                .frame(width: 300, height: 300)
-                .clipShape(Circle())
-                .scaledToFit()
-                .overlay(
-                    Circle()
-                        .stroke(Color.blue, lineWidth: 5)
-                )
-                .padding(30)
+        HeaderSlide("自己紹介") {
+            item(name: "名前", content: "あきどん")
+            item(name: "X(Twitter)", content: "@akidon0000")
+            item(name: "所属", content: "徳島大学院 修士2年")
+            item(name: "専攻", content: "無機化学")
+            item(name: "趣味", content: "サイクリング - ポケカ(New)")
         }
-        .frame(maxHeight: .infinity)
-        .padding(.leading)
-    }
-
-    var code: String {
-        """
-        struct Profile {
-            let name = "akidon0000"
-            let x    = "@akidon0000"
-            var affiliation: String {
-                let currentYear = Calendar.current.component(.year, from: Date())
-                return 2025 <= currentYear ? "徳島大学院 修士2年" : "Sansan株式会社"
+        .overlay {
+            VStack() {
+                Image("akidon0000")
+                    .resizable()
+                    .frame(width: 400, height: 400)
+                    .clipShape(Circle())
+                    .scaledToFit()
+                    .overlay(
+                        Circle()
+                            .stroke(Color.blue, lineWidth: 5)
+                    )
+                    .padding(.trailing, 350)
+                    .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .trailing)
             }
         }
-        """
+//        VStack() {
+//            HeaderSlide("自己紹介") {
+//                item(name: "名前", content: "あきどん")
+//                item(name: "X(Twitter)", content: "@akidon0000")
+//                item(name: "所属", content: "徳島大学院 修士2年")
+//                item(name: "専攻", content: "無機化学")
+//                item(name: "趣味", content: "サイクリング - ポケカ(New)")
+//            }
+//            .overlay {
+//                VStack() {
+//                    Image("akidon0000")
+//                        .resizable()
+//                        .frame(width: 400, height: 400)
+//                        .clipShape(Circle())
+//                        .scaledToFit()
+//                        .overlay(
+//                            Circle()
+//                                .stroke(Color.blue, lineWidth: 5)
+//                        )
+//                        .padding(.trailing, 350)
+//                        .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .trailing)
+//                }
+//            }
+//        }
+//        .frame(maxHeight: .infinity)
+//        .padding(.leading)
     }
     
-    var script: String {
-        """
-        「あきどん」と言います。徳島で学生をやってます。来年からはSansanでiOSのエンジニアになります。
-        趣味は半年前に始めたポケカです〜
-        """
+    private func item(name: String, content: String) -> some View {
+        HStack(spacing: 32) {
+            Text(name)
+                .fontWeight(.bold)
+            Capsule()
+                .foregroundColor(.accentColor)
+                .frame(width: 20, height: 10)
+            Text(content)
+        }
+        .fixedSize()
     }
 }
 

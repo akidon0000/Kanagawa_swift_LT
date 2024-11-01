@@ -109,11 +109,11 @@
 		D80A939884DD6624BC401660 /* SimEyes */ = {
 			isa = PBXGroup;
 			children = (
-				0379A24BAF6762A255B62868 /* Info.plist */,
-				EE1CA8BEDD06C796B730E855 /* SimEyes.entitlements */,
 				36F81C588A8D80A6E6C65AF8 /* SimEyesApp.swift */,
 				2519F22AB00801004A02D732 /* SlideConfiguration.swift */,
+				EE1CA8BEDD06C796B730E855 /* SimEyes.entitlements */,
 				15AB41A82CBD2A8500DC77F4 /* Assets.xcassets */,
+				0379A24BAF6762A255B62868 /* Info.plist */,
 				F6198E11A7A93E87B0E8CAEF /* Slides */,
 				153FB8C12CCCCD0300709EAC /* Custom */,
 				1594FF3E2CBD409A00215B4A /* Templates */,
