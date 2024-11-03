@@ -16,9 +16,8 @@
 		15BDD9322CCCF8B40003D1DB /* IntroductionSlide2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15BDD9312CCCF8B40003D1DB /* IntroductionSlide2.swift */; };
 		15BDD93A2CCDCD520003D1DB /* OverviewSlide.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15BDD9392CCDCD520003D1DB /* OverviewSlide.swift */; };
 		15BDD93C2CCDD02E0003D1DB /* MacOSCameraToJPGSlide1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15BDD93B2CCDD02E0003D1DB /* MacOSCameraToJPGSlide1.swift */; };
-		15BDD9442CCF2D830003D1DB /* TwitterDanmakuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15BDD9432CCF2D830003D1DB /* TwitterDanmakuViewController.swift */; };
+		15BDD9442CCF2D830003D1DB /* PostDanmakuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15BDD9432CCF2D830003D1DB /* PostDanmakuView.swift */; };
 		15BDD9472CCF883C0003D1DB /* SwiftSoup in Frameworks */ = {isa = PBXBuildFile; productRef = 15BDD9462CCF883C0003D1DB /* SwiftSoup */; };
-		15BDD94A2CCFA8430003D1DB /* TweetInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15BDD9492CCFA8430003D1DB /* TweetInfo.swift */; };
 		15DE46242CD0DFCA008AA8EF /* MacOSCameraToJPGSlide2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15DE46232CD0DFCA008AA8EF /* MacOSCameraToJPGSlide2.swift */; };
 		15DE46262CD0EE64008AA8EF /* DisplayImageFromSimSlide.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15DE46252CD0EE64008AA8EF /* DisplayImageFromSimSlide.swift */; };
 		15DE46282CD1185A008AA8EF /* TaskSlide.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15DE46272CD1185A008AA8EF /* TaskSlide.swift */; };
@@ -39,8 +38,7 @@
 		15BDD9312CCCF8B40003D1DB /* IntroductionSlide2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroductionSlide2.swift; sourceTree = "<group>"; };
 		15BDD9392CCDCD520003D1DB /* OverviewSlide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverviewSlide.swift; sourceTree = "<group>"; };
 		15BDD93B2CCDD02E0003D1DB /* MacOSCameraToJPGSlide1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MacOSCameraToJPGSlide1.swift; sourceTree = "<group>"; };
-		15BDD9432CCF2D830003D1DB /* TwitterDanmakuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwitterDanmakuViewController.swift; sourceTree = "<group>"; };
-		15BDD9492CCFA8430003D1DB /* TweetInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TweetInfo.swift; sourceTree = "<group>"; };
+		15BDD9432CCF2D830003D1DB /* PostDanmakuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostDanmakuView.swift; sourceTree = "<group>"; };
 		15DE46232CD0DFCA008AA8EF /* MacOSCameraToJPGSlide2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MacOSCameraToJPGSlide2.swift; sourceTree = "<group>"; };
 		15DE46252CD0EE64008AA8EF /* DisplayImageFromSimSlide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayImageFromSimSlide.swift; sourceTree = "<group>"; };
 		15DE46272CD1185A008AA8EF /* TaskSlide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskSlide.swift; sourceTree = "<group>"; };
@@ -84,8 +82,7 @@
 		15BDD9482CCFA3910003D1DB /* Danmaku */ = {
 			isa = PBXGroup;
 			children = (
-				15BDD9492CCFA8430003D1DB /* TweetInfo.swift */,
-				15BDD9432CCF2D830003D1DB /* TwitterDanmakuViewController.swift */,
+				15BDD9432CCF2D830003D1DB /* PostDanmakuView.swift */,
 			);
 			path = Danmaku;
 			sourceTree = "<group>";
@@ -219,10 +216,9 @@
 				15AB419E2CBCD0D900DC77F4 /* IntroductionSlide1.swift in Sources */,
 				15DE46282CD1185A008AA8EF /* TaskSlide.swift in Sources */,
 				F369026F62A3146ACCD73B28 /* SimEyesApp.swift in Sources */,
-				15BDD9442CCF2D830003D1DB /* TwitterDanmakuViewController.swift in Sources */,
+				15BDD9442CCF2D830003D1DB /* PostDanmakuView.swift in Sources */,
 				15DE46242CD0DFCA008AA8EF /* MacOSCameraToJPGSlide2.swift in Sources */,
 				E12B38C2C668A6EBC4AA7840 /* SlideConfiguration.swift in Sources */,
-				15BDD94A2CCFA8430003D1DB /* TweetInfo.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -12,43 +12,28 @@ import SlideKit
 struct MacOSCameraToJPGSlide2: View {
 
     var body: some View {
-        HeaderSlide("Macのカメラ映像をJPEGに変換・保存") {
-            Item("AVCaptureOutput") {
-                HStack {
-                    Code(code, fontSize: 28)
-                    VStack {
-                        SlideText("SMSampleBuffer")
-                        SlideText("cvPixelBuffer")
-                        SlideText("CIImage")
-                        SlideText("CGImage")
-                        SlideText("NSImage")
-                        SlideText("tiff")
-                        SlideText("bitmap")
-                        SlideText("jpeg")
-                    }
-                }
+        HeaderSlide("カメラ映像をJPEGに変換・保存") {
+            VStack(alignment: .leading) {
+                Item("CMSampleBuffer -> cvPixelBuffer -> CIImage -> jpeg")
+                    
             }
-            
-            SlideText("/tmp/captured_image.jpg としてキャプチャのたびに上書き保存", fontSize: 60)
+            Code(code, fontSize: 30)
         }
     }
     
     var code: String {
         """
-        let context = CIContext()
-        
-        guard let pixelBuffer = CMSampleBufferGetImageBuffer(sampleBuffer) else {
-            return
-        }
-        let ciImage = CIImage(cvPixelBuffer: pixelBuffer)
-        guard let cgImage = context.createCGImage(ciImage, from: ciImage.extent) else {
-            return
-        }
-        let nsImage = NSImage(cgImage: cgImage, size: .zero)
-        guard let tiffData = nsImage.tiffRepresentation,
-              let bitmap = NSBitmapImageRep(data: tiffData),
-              let jpeg = bitmap.representation(using: .jpeg, properties: [:]) else {
-            return
+        func captureOutput(_ output: AVCaptureOutput, didOutput sampleBuffer: CMSampleBuffer, from connection: AVCaptureConnection) {
+            guard let imageBuffer = CMSampleBufferGetImageBuffer(sampleBuffer) else {
+                return
+            }
+            
+            let ciImage = CIImage(cvPixelBuffer: imageBuffer)
+            let context = CIContext()
+            
+            guard let jpegData = context.jpegRepresentation(of: ciImage, colorSpace: CGColorSpaceCreateDeviceRGB(), options: [:]) else {
+                return
+            }
         }
         """
     }

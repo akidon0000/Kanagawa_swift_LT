@@ -24,7 +24,6 @@ struct SlideConfiguration {
         CenterSlide("実演📱")
         OverviewSlide()
         MacOSCameraToJPGSlide1()
-        MacOSCameraToJPGSlide2()
         DisplayImageFromSimSlide()
         CenterSlide("完成")
         TaskSlide()

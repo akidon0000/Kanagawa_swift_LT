@@ -12,8 +12,8 @@ import SlideKit
 struct DisplayImageFromSimSlide: View {
 
     var body: some View {
-        HeaderSlide("シミュレーターアプリにJPEGを表示") {
-            Item("0.1秒に1回 (10 FPS) ディレクトリ内の写真を取ってくる実装")
+        HeaderSlide("シミュレーターにJPEGを表示") {
+            Item("0.1秒に1回 (10 FPS) ディレクトリ内の保存された写真を取ってくる")
             Code(code, fontSize: 40)
         }
     }
@@ -24,7 +24,7 @@ struct DisplayImageFromSimSlide: View {
         do {
             let data = try Data(contentsOf: url)
             if let image = UIImage(data: data) {
-                { hogehoge }
+                
             }
         } catch {
             return

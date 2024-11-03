@@ -13,10 +13,14 @@ struct SimEyesApp: App {
     private static let configuration = SlideConfiguration()
     
     var presentationContentView: some View {
-        SlideRouterView(slideIndexController: Self.configuration.slideIndexController)
-            .foregroundStyle(.black)
-            .background(.white)
-            .headerSlideStyle(CustomHeaderSlideStyle())
+        ZStack {
+            SlideRouterView(slideIndexController: Self.configuration.slideIndexController)
+                .foregroundStyle(.black)
+                .background(.white)
+                .headerSlideStyle(CustomHeaderSlideStyle())
+            
+//            PostDanmakuView()
+        }
     }
 
     var body: some Scene {
