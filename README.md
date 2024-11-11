@@ -7,6 +7,8 @@
 
 実演動画：[実演動画 Youtube](https://youtube.com/shorts/D7ZTqzWZFJ0?feature=share)
 
+登壇動画:[【LT】iPhone Simulatorに目を生やす by akidon0000 #kanagawa_swift](https://www.youtube.com/watch?v=Ehb4Gmug7Yw)
+
 紹介リポジトリ：
 - [iSimCameraTool](https://github.com/akidon0000/iSimCameraTool)
 - [karashiru](https://github.com/akidon0000/karashiru)
